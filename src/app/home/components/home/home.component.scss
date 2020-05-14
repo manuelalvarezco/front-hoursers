@@ -1,0 +1,33 @@
+.swiper-container {
+    width: 100%;
+}
+
+.box-contain {
+    width: 100%;
+    padding: 24px 0;
+}
+
+.contenedor {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 1200px) {
+        .contain {
+            width: 1170px;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}

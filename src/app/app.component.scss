@@ -1,0 +1,139 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.separador-60 {
+    padding: 30px;
+    width: 10px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.section {
+    min-height: 500px;
+}
+
+.info-project {
+    height: 215px;
+}
+
+.caso-exito {
+    color: #8fccc9;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h2.title-storie-project {
+    font-size: 40px!important;
+    font-weight: 500!important;
+    font-style: italic;
+}
+
+.phome h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.data-content {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.background-table {
+    position: absolute;
+    top: 0;
+    left: 14px;
+}
+
+.separador-100 {
+    padding: 50px;
+    width: 10px;
+}
+
+.separador-20 {
+    margin-bottom: 20px;
+}
+
+a.btn-housers-orange:visited,
+.btn-housers-orange:visited,
+a.btn-housers-orange:focus,
+.btn-housers-orange:focus {
+    background-color: #fd7b61!important;
+}
+
+a.btn-housers-orange,
+.btn-housers-orange {
+    color: #fff!important;
+    background-color: #fd7b61;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    font-weight: normal;
+    padding: 9px 16px!important;
+    width: 100%;
+}
+
+.btn-home-orange {
+    width: 198px!important;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+a {
+    color: #91ccc9;
+    text-decoration: none;
+}
+
+.content-investment-tech {
+    padding: 53px 15px;
+    display: block;
+}
+
+.polygon-triangle {
+    -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+}
+
+.background-polygon {
+    width: 65px;
+    height: 60px;
+    background: linear-gradient(256.51deg, #ade4e2 0, #58b2b1 100%);
+    position: absolute;
+    transform: rotate(75deg);
+    z-index: -1;
+    left: -5px;
+    top: 36px;
+}

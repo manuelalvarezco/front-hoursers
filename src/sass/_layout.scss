@@ -1,0 +1,38 @@
+.container {
+    max-width: 1200px;
+    @media screen and(min-width: 767px) {
+        margin: auto;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.text-center {
+    text-align: center;
+}

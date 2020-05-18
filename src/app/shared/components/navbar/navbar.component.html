@@ -1,19 +1,23 @@
-<mat-toolbar color="primary">
-    <h3>+34 911 930 730 soporte@housers.com</h3>
-    <h3 style="margin-left:auto;">Información básica para el inversor</h3>
+<mat-toolbar class="toolbar-lg">
+    <div class="container d-flex justify-content-between">
+        <span class="white-color fs-16">+34 911 930 730 soporte@housers.com</span>
+        <a href="#" style="border-bottom: .5px solid white;" class="white-color fs-16">Información básica para el inversor</a>
+    </div>
 </mat-toolbar>
-<mat-toolbar>
-    <button mat-icon-button color="primary" aria-label="Example icon button with a heart icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <img width="120" src="https://static.housers.com/assets/images/logos/housers-logo-marron.svg" alt="logo">
-    <ul style="margin-left: auto; display: flex;">
-        <li style="display: flex;">
-            <mat-icon>person</mat-icon>
-            <a href="#">ACCEDER</a>
-        </li>
-        <li style="display: flex;">
-            <a href="#">REGÍSTRATE</a>
-        </li>
-    </ul>
+<mat-toolbar class="toolbar-sm">
+    <div class="container d-flex align-items-center">
+        <button (click)="openSidenav(true)" mat-icon-button aria-label="Menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <img width="120" src="https://static.housers.com/assets/images/logos/housers-logo-marron.svg" alt="logo">
+        <ul class="nabvar-lg">
+            <li style=" display: flex;align-items: flex-start; ">
+                <mat-icon>person</mat-icon>
+                <a class="gray-color fs-16" href="# ">Acceder</a>
+            </li>
+            <li style="display: flex;">
+                <a class="btn btn-primary fs-16 " href="#">Regístrate</a>
+            </li>
+        </ul>
+    </div>
 </mat-toolbar>

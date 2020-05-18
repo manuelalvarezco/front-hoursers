@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SidenavService } from '../core/services/sidenav.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  sidenav$: Observable<boolean>;
 
-  ngOnInit(): void {
+  public opened;
+
+  constructor(public sidenavService: SidenavService) { }
+
+  ngOnInit() {
+    this.sidenavService.sidenav$.subscribe(
+      data => {
+        this.opened = data;
+      }
+    )
+  }
+
+  closeSidenav(event){
+    this.sidenavService.updateData(event);
   }
 
 }

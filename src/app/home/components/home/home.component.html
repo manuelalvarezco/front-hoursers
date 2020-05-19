@@ -1,16 +1,18 @@
 <div class="container">
-    <section class="main" style="max-height: 380px;">
+    <section class="main">
         <div class="d-flex">
-            <div class="col-md-6" style="margin-top: 35px;">
-                <h1 style="font-size: 45px;">
+            <div class="col-md-6 main-info">
+                <h1 class="main-info__text">
                     Primera plataforma <br> pan-europea de
                     <strong class="orange-color">
                 inversión inmobiliaria.
               </strong>
                 </h1>
-                <a class="gray-color fs-16" href="# ">Más información</a>
+                <div class="main-info__button">
+                    <a style="border-bottom: 1px solid #ccc;" class="gray-color fs-16" href="# ">Más información</a>
+                </div>
             </div>
-            <div class="col-md-6" style="padding: 0;">
+            <div class="col-md-6 main-img">
                 <img style="width: 100%;max-width: 100%;" src="assets/images/bg-property.png" alt="property">
             </div>
         </div>
@@ -20,31 +22,28 @@
 </div>
 
 <div class="container">
-    <section class="carrousel-invertions" style="margin:20px 0">
-        <div class="d-flex">
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="d-flex flex-column">
-                    <h3 class="text-center">Mejores <br> inversiones</h3>
-                    <button class="btn btn-secondary">Quiero invertir</button>
-                </div>
+    <section class="carrousel-invertions">
+        <div class="d-flex flex-wrap">
+            <div class="col-xs-12 col-md-4 d-flex justify-content-center align-items-center">
+                <p style="font-size: 20px;font-family: sans-serif;text-align: center;">Diversifica todo lo que quieras <br> desde solo 50€</p>
             </div>
-            <div class="col-md-8">
+            <div class="carrousel-invertions__swiper col-md-8">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="card-item" style="width: 350px;height: 200px;background-color: white;margin:0 15px;">
-                                <img style="max-width: 100%;" src="assets/images/img02.jpeg" alt="">
+                            <div class="swiper-slide__item">
+                                <img class="swiper-slide__item--img" src="assets/images/img02.jpeg" alt="">
                             </div>
-                            <div class="card-item" style="width: 350px;height: 200px;background-color: white;margin:0 15px;">
-                                <img style="max-width: 100%;" src="assets/images/img02.jpeg" alt="">
+                            <div class="swiper-slide__item">
+                                <img class="swiper-slide__item--img" src="assets/images/img02.jpeg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card-item" style="width: 350px;height: 200px;background-color: white;margin:0 15px;">
-                                <img style="max-width: 100%;" src="assets/images/img02.jpeg" alt="">
+                            <div class="swiper-slide__item">
+                                <img class="swiper-slide__item--img" src="assets/images/img02.jpeg" alt="">
                             </div>
-                            <div class="card-item" style="width: 350px;height: 200px;background-color: white;margin:0 15px;">
-                                <img style="max-width: 100%;" src="assets/images/img02.jpeg" alt="">
+                            <div class="swiper-slide__item">
+                                <img class="swiper-slide__item--img" src="assets/images/img02.jpeg" alt="">
 
                             </div>
                         </div>
@@ -59,45 +58,63 @@
                 </div>
             </div>
 
+            <div class="box-cards">
+                <div class="cards-container" style="display: flex; justify-content: center;align-items: center; flex-wrap: wrap;">
+                    <div class="card-item">
+                        <img class="card-item--img" src="assets/images/img02.jpeg" alt="">
+                    </div>
+                    <div class="card-item">
+                        <img class="card-item--img" src="assets/images/img02.jpeg" alt="">
+                    </div>
+                    <div class="card-item">
+                        <img class="card-item--img" src="assets/images/img02.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>
+
 </div>
 
-<div class="box-contain">
-    <div class="contenedor">
-        <div class="text-center">
-            <p>Somos una plataforma de financiación participativa autorizada por la <strong>CNMV</strong> mediante licencia número 20 y la <strong>CMVM</strong> (organismo regulador portugués), con <strong>120.172 usuarios</strong> y una inversión acumulada
-                de <strong>113.801.600€</strong>.</p>
-            <p>Recuerda que no somos una empresa de servicios de inversión ni una entidad de crédito. Por favor lee la <a href="/es/informacion-basica-inversor">información básica para el inversor</a></p>
+
+<div class="info-empresa">
+
+    <div class="info-empresa__partner">
+        <div class="info-empresa__img">
+            <div class="container info-empresa__container">
+                <div class="info-empresa__item">
+                    <img class="info-empresa__item-img" height="70" src="assets/images/logo-sfc.png" alt="logo-sfc">
+                </div>
+                <div class="info-empresa__item">
+                    <img class="info-empresa__item-img" height="70" src="assets/images/logo-adigital-negativo.png" alt="logo-sfc">
+                </div>
+                <div class="info-empresa__item">
+                    <img class="info-empresa__item-img" height="70" src="assets/images/ecomerce-europe.png" alt="logo-sfc">
+                </div>
+                <div class="info-empresa__item">
+                    <img class="info-empresa__item-img" height="70" src="assets/images/logo-shes.png" alt="logo-sfc">
+                </div>
+
+
+            </div>
         </div>
+
+        <div class="container info-empresa__info">
+            <p class="info-empresa__text">Somos una plataforma de financiación participativa autorizada por la CNMV <br> mediante licencia número 20 y la CMVM (organismo regulador portugués), <br> con 120.172 usuarios y una inversión acumulada de <strong>113.801.600€</strong>.</p>
+
+            <div class="float-button" style="display: flex; justify-content: center;margin-top: 5%;margin-bottom: 5%;height: 41px;">
+                <button class="btn btn-primary">Invierte</button>
+            </div>
+        </div>
+
     </div>
+
+
 </div>
 
-<div class="contenedor" style="display: flex; justify-content: center; align-items: center;">
-    <div style="display: flex; flex-direction: column; justify-content:center; align-items:center">
-        <h3>Diversifica todo lo que quieras <br> desde solo 50€</h3>
-        <p>Construye tu cartera de inversión basada en activos inmobiliarios</p>
-    </div>
-</div>
 
-<div class="box-cards">
-    <div class="cards-container" style="display: flex; justify-content: center;align-items: center; flex-wrap: wrap;">
-        <div class="card-item" style="width: 350px;height: 200px;background-color: blueviolet;margin:0 15px;">
-            Card 1
-        </div>
-        <div class="card-item" style="width: 350px;height: 200px;background-color: blueviolet;margin:0 15px;">
-            Card 2
-        </div>
-        <div class="card-item" style="width: 350px;height: 200px;background-color: blueviolet;margin:0 15px;">
-            Card 3
-        </div>
-    </div>
-</div>
-
-<div class="float-button" style="display: flex; justify-content: center;margin-top: 5%;">
-    <button mat-raised-button color="primary">Invierte</button>
-</div>
 
 
 <div class="contenedor" style="display: flex; justify-content: center; align-items: center;text-align: center;">

@@ -6,7 +6,6 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -22,25 +21,61 @@
     align-items: center;
 }
 
-.box-contain {
+.info-empresa {
     width: 100%;
-    padding: 24px 0;
-}
-
-.contenedor {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    @media (min-width: 1200px) {
-        .contain {
-            width: 1170px;
-        }
+    @media screen and(min-width: 767px) {
+        margin-top: 5%;
     }
 }
 
-.text-center {
+.info-empresa__partner {
+    @media screen and(max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.info-empresa__img {
+    display: flex;
+    min-height: 100px;
+    background: #DFE7F0;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-empresa__info {
+    margin: 5%;
+    @media screen and(max-width: 767px) {
+        margin: 0 15px;
+    }
+}
+
+.info-empresa__text {
+    font-size: 20px;
+    font-family: sans-serif;
     text-align: center;
+}
+
+.info-empresa__container {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and(max-width: 767px) {
+        justify-content: center;
+    }
+}
+
+.info-empresa__item {
+    max-width: 350px;
+    max-height: 200px;
+    margin: 0 15px;
+    @media screen and(max-width: 767px) {
+        margin: 15px;
+    }
+}
+
+.info-empresa__item-img {
+    width: auto;
+    max-width: 100%;
 }
 
 .example-card {
@@ -50,4 +85,87 @@
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
+}
+
+.main {
+    @media screen and(min-width: 767px) {
+        max-height: 380px;
+    }
+}
+
+.main-info {
+    @media screen and(min-width: 767px) {
+        margin-top: 35px;
+    }
+}
+
+.main-info__text {
+    font-size: 45px;
+    @media screen and(max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.main-info__button {
+    @media screen and(max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.main-img {
+    padding: 0;
+    @media screen and(max-width: 767px) {
+        display: none
+    }
+}
+
+.swiper-slide__item {
+    width: 350px;
+    height: 200px;
+    @media screen and(min-width: 767px) {
+        margin: 0 15px;
+    }
+}
+
+.swiper-slide__item.hidden-xs {
+    width: 350px;
+    height: 200px;
+    @media screen and(min-width: 767px) {
+        margin: 0 15px;
+    }
+}
+
+.swiper-slide__item--img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.carrousel-invertions {
+    @media screen and(max-width: 767px) {
+        margin-top: 20px;
+    }
+}
+
+.carrousel-invertions__swiper {
+    @media screen and(max-width: 767px) {
+        display: none;
+    }
+}
+
+.box-cards {
+    width: 100%;
+    @media screen and(min-width: 767px) {
+        display: none;
+    }
+}
+
+.card-item {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.card-item--img {
+    width: 100%;
+    max-width: 100%;
 }

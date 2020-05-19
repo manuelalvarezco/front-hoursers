@@ -6,12 +6,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 
 
+
 const material = [
+  MatCardModule,
   MatSidenavModule,
   MatToolbarModule,
   MatButtonModule,
-  MatIconModule,
-  MatCardModule
+  MatIconModule
 ];
 
 @NgModule({

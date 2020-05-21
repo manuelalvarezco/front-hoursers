@@ -172,7 +172,6 @@
 }
 
 .BaseCard {
-    border-radius: .5rem;
     background: #fff;
     -webkit-box-shadow: 1px 2px 4px 0 rgba(21, 99, 157, .16);
     box-shadow: 1px 2px 4px 0 rgba(21, 99, 157, .16);
@@ -372,4 +371,113 @@
     font-size: 12px;
     line-height: 1.83;
     font-weight: 700;
+}
+
+.hidden-lg {
+    @media screen and(min-width: 767px) {
+        display: none;
+    }
+}
+
+.hidden-xs {
+    @media screen and(max-width: 767px) {
+        display: none;
+    }
+}
+
+.swiper-slide__item-header {
+    color: white;
+    display: flex;
+    position: absolute;
+    width: 43%;
+    justify-content: space-between;
+    padding: 0 .5em;
+    margin: .5em 0;
+}
+
+.swiper-slide2__item-header {
+    color: white;
+    display: flex;
+    position: absolute;
+    width: 43%;
+    justify-content: space-between;
+    padding: 0 .5em;
+    margin: .5em 0;
+}
+
+.swiper-slide__item-footer {
+    color: white;
+    display: flex;
+    position: absolute;
+    width: 43%;
+    justify-content: space-between;
+    padding: 0 .5em;
+    margin: .5em 0;
+    bottom: 0;
+}
+
+.swiper-slide2__item-footer {
+    color: white;
+    display: flex;
+    position: absolute;
+    width: 43%;
+    justify-content: space-between;
+    padding: 0 .5em;
+    margin: .5em 0;
+    bottom: 0;
+}
+
+.swiper-slide--overlay {
+    position: absolute;
+    width: 48%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .4;
+}
+
+.item-footer__category {
+    width: 20px;
+    background: orange;
+    padding: .2em .2em;
+    border-radius: 30%;
+}
+
+.swiper-slide2--overlay {
+    position: absolute;
+    width: 48%;
+    top: 0;
+    left: 377px;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .4;
+}
+
+.item-footer2__category {
+    width: 20px;
+    background: orange;
+    padding: .2em .2em;
+    border-radius: 30%;
+}
+
+.card-item__header {
+    display: flex;
+    position: absolute;
+    width: 43%;
+    justify-content: space-between;
+    padding: 0 .5em;
+    margin: .5em 0;
+}
+
+.card__item-footer {
+    display: flex;
+    position: absolute;
+    width: 43%;
+    justify-content: space-between;
+    padding: 0 .5em;
+    margin: .5em 0;
+    bottom: 0;
 }

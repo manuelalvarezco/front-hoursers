@@ -23,13 +23,13 @@
 
 .info-empresa {
     width: 100%;
-    @media screen and(min-width: 767px) {
+    @media screen and(min-width: 768px) {
         margin-top: 5%;
     }
 }
 
 .info-empresa__partner {
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -45,7 +45,7 @@
 
 .info-empresa__info {
     margin: 5%;
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         margin: 0 15px;
     }
 }
@@ -60,7 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         justify-content: center;
     }
 }
@@ -69,7 +69,7 @@
     max-width: 350px;
     max-height: 200px;
     margin: 0 15px;
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         margin: 15px;
     }
 }
@@ -79,36 +79,27 @@
     max-width: 100%;
 }
 
-.example-card {
-    max-width: 400px;
-}
-
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-}
-
 .main {
-    @media screen and(min-width: 767px) {
+    @media screen and(min-width: 768px) {
         max-height: 380px;
     }
 }
 
 .main-info {
-    @media screen and(min-width: 767px) {
+    @media screen and(min-width: 768px) {
         margin-top: 35px;
     }
 }
 
 .main-info__text {
     font-size: 45px;
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         text-align: center;
     }
 }
 
 .main-info__button {
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         display: flex;
         justify-content: center;
     }
@@ -116,7 +107,7 @@
 
 .main-img {
     padding: 0;
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         display: none
     }
 }
@@ -124,7 +115,7 @@
 .swiper-slide__item {
     width: 350px;
     height: 200px;
-    @media screen and(min-width: 767px) {
+    @media screen and(min-width: 768px) {
         margin: 0 15px;
     }
 }
@@ -132,7 +123,7 @@
 .swiper-slide__item.hidden-xs {
     width: 350px;
     height: 200px;
-    @media screen and(min-width: 767px) {
+    @media screen and(min-width: 768px) {
         margin: 0 15px;
     }
 }
@@ -143,20 +134,20 @@
 }
 
 .carrousel-invertions {
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         margin-top: 20px;
     }
 }
 
 .carrousel-invertions__swiper {
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         display: none;
     }
 }
 
 .box-cards {
     width: 100%;
-    @media screen and(min-width: 767px) {
+    @media screen and(min-width: 768px) {
         display: none;
     }
 }
@@ -374,13 +365,13 @@
 }
 
 .hidden-lg {
-    @media screen and(min-width: 767px) {
+    @media screen and(min-width: 768px) {
         display: none;
     }
 }
 
 .hidden-xs {
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: 768px) {
         display: none;
     }
 }

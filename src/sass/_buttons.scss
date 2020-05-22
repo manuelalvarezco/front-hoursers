@@ -21,3 +21,21 @@
         border: 1px solid $gray-color;
     }
 }
+
+.float-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 41px;
+}
+
+.bt-exit {
+    font-size: 10px;
+    width: max-content;
+    height: 30px;
+}
+
+.btn-md {
+    height: 41px;
+}

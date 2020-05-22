@@ -4,6 +4,10 @@
     font-size: 16px;
 }
 
+.fs-14 {
+    font-size: 14px;
+}
+
 a {
     text-decoration: none;
 }
@@ -12,6 +16,27 @@ a {
     text-align: center;
 }
 
+.text-white {
+    color: white;
+}
+
 .text-bold {
     text-transform: bold;
+}
+
+.title {
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.parrafo-lg {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
 }

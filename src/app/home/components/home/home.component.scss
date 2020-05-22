@@ -21,6 +21,17 @@
     align-items: center;
 }
 
+.swiper-slide__box {
+    background-color: #124C8D;
+    height: 215px;
+}
+
+.swiper-slide__box-item {
+    height: 25px;
+    color: white;
+    padding: 1px .5em;
+}
+
 .info-empresa {
     width: 100%;
     @media screen and(min-width: 768px) {
@@ -131,6 +142,20 @@
 .swiper-slide__item--img {
     width: 100%;
     max-width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.div-img {
+    height: 140px;
+}
+
+.rating {
+    height: 20px;
+    color: white;
+    padding: .2em .5em;
+    border-radius: 5px;
+    background: orange;
 }
 
 .carrousel-invertions {
@@ -152,6 +177,23 @@
     }
 }
 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mat-card__item {
+    max-width: 400px;
+}
+
+.mat-card-content__title {
+    color: #124C8D;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .card-item {
     width: 100%;
     margin: 15px 0;
@@ -160,6 +202,38 @@
 .card-item--img {
     width: 100%;
     max-width: 100%;
+}
+
+.mat-card__title {
+    color: #124C8D
+}
+
+.tir {
+    font-size: 14px;
+    margin: .5em
+}
+
+.percent-tir {
+    font-size: 14px;
+    color: #6F93BA;
+}
+
+.rent {
+    font-size: 12px;
+    margin: .5em;
+    color: #124C8D;
+    font-weight: bold;
+}
+
+.percent-rent {
+    font-size: 20px;
+    color: #F34A2D;
+    font-weight: bold;
+}
+
+.button_cards {
+    width: 100%;
+    height: 35px;
 }
 
 .BaseCard {
@@ -201,6 +275,12 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+.Recommendations-title {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 .Recommendations-arrows {
@@ -252,6 +332,22 @@
     overflow-x: scroll;
     padding: .5rem 0;
     margin: 0 auto;
+}
+
+#totalTirHousersCircle {
+    width: 205px;
+    height: 205px;
+    position: relative;
+}
+
+.progressbar-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0px;
+    margin: 0px;
+    transform: translate(-50%, -50%);
+    color: rgb(70, 61, 62);
 }
 
 .CourseRecommendation {

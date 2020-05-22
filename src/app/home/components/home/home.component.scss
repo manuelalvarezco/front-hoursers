@@ -582,3 +582,9 @@
     margin: .5em 0;
     bottom: 0;
 }
+
+.button-map {
+    @media screen and(max-width: 768px) {
+        justify-content: center;
+    }
+}

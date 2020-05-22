@@ -4,11 +4,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from '../material/material.module';
 import { BannerComponent } from './components/banner/banner.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 
 
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, BannerComponent],
+  declarations: [NavbarComponent, FooterComponent, BannerComponent, SidenavComponent],
   imports: [
     CommonModule,
     MaterialModule
@@ -16,7 +17,8 @@ import { BannerComponent } from './components/banner/banner.component';
   exports:[
     NavbarComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    SidenavComponent
   ]
 })
 export class SharedModule { }

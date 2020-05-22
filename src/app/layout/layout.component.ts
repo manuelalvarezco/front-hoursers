@@ -20,11 +20,8 @@ export class LayoutComponent implements OnInit {
       data => {
         this.opened = data;
       }
-    )
+    );
   }
 
-  closeSidenav(event){
-    this.sidenavService.updateData(event);
-  }
 
 }

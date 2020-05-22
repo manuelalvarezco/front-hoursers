@@ -63,7 +63,7 @@
 
 .info-empresa__text {
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
@@ -103,6 +103,7 @@
 }
 
 .main-info__text {
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     @media screen and(max-width: 768px) {
         text-align: center;
@@ -189,9 +190,14 @@
 }
 
 .mat-card-content__title {
+    font-family: 'Roboto', sans-serif;
     color: #124C8D;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.mat-card__subtitle {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card-item {
@@ -205,20 +211,24 @@
 }
 
 .mat-card__title {
+    font-family: 'Roboto', sans-serif;
     color: #124C8D
 }
 
 .tir {
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin: .5em
 }
 
 .percent-tir {
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #6F93BA;
 }
 
 .rent {
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     margin: .5em;
     color: #124C8D;
@@ -226,6 +236,7 @@
 }
 
 .percent-rent {
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: #F34A2D;
     font-weight: bold;
@@ -278,6 +289,7 @@
 }
 
 .Recommendations-title {
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-family: sans-serif;
     text-align: center;
@@ -335,6 +347,7 @@
 }
 
 #totalTirHousersCircle {
+    font-family: 'Roboto', sans-serif;
     width: 205px;
     height: 205px;
     position: relative;
@@ -385,6 +398,7 @@
 }
 
 .CourseRecommendation-title {
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.43;
     color: #273b47;

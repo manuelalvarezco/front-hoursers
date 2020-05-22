@@ -1,0 +1,26 @@
+.mat-sidenav-side {
+    margin: 2em 0 0 1.5em;
+}
+
+.list-menu {
+    padding: 0;
+}
+
+.list-menu__item {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.list-menu__item>a {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #4D4E4E;
+}
+
+.btn-close {
+    text-align: center;
+    @media screen and(max-width: 767px) {
+        margin-left: 100px;
+    }
+}

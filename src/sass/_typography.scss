@@ -24,19 +24,30 @@ a {
     text-transform: bold;
 }
 
+.parrafo {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .title {
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     margin: 5px 0;
     font-weight: bold;
+    @media screen and(max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .parrafo-lg {
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    font-family: sans-serif;
+    @media screen and(max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .subtitle {
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-family: sans-serif;
     text-align: center;
 }

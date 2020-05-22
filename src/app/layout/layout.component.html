@@ -1,46 +1,6 @@
 <mat-sidenav-container>
     <mat-sidenav [(opened)]="opened">
-        <div class="d-flex flex-column mat-sidenav-side">
-            <div class="d-flex align-items-center">
-                <div class="col-md-8">
-                    <span class="text-center text-bold">
-                    Crowd Units
-                  </span>
-                </div>
-                <div class="col-md-4 btn-close">
-                    <button mat-icon-button aria-label="Close" (click)="closeSidenav(false)">
-                      <mat-icon>close</mat-icon>
-                    </button>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <ul class="list-menu">
-                    <li class="list-menu__item">
-                        <a href="#">Invierte</a>
-                    </li>
-                    <li class="list-menu__item">
-                        <a href="#">Finánciate</a>
-                    </li>
-                    <li class="list-menu__item">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="list-menu__item">
-                        <a href="#">Cómo funciona</a>
-                    </li>
-                    <li class="list-menu__item">
-                        <a href="#">Quiénes somos</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-center">
-                <mat-icon>person</mat-icon>
-                <a class="gray-color fs-16" href="# ">Acceder</a>
-            </div>
-            <div class="mt-2">
-                <button style="height: 41px; width: 131px;" class="btn btn-primary">Regístrate</button>
-            </div>
-
-        </div>
+        <app-sidenav></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
         <app-navbar></app-navbar>

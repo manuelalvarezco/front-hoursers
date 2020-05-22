@@ -5,3 +5,10 @@
     margin-left: auto;
     text-align: center;
 }
+
+.socials {
+    @media screen and(max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+}

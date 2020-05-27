@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SidenavService } from 'src/app/core/services/sidenav.service';
+import {MatDialog} from '@angular/material/dialog';
+import { RegisterComponent } from 'src/app/auth/components/register/register.component';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,13 +11,16 @@ import { SidenavService } from 'src/app/core/services/sidenav.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public sidenavService: SidenavService) { }
+  constructor(public sidenavService: SidenavService, public dialog: MatDialog) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   openSidenav(event){
     this.sidenavService.updateData(event);
   }
 
+  openDialog(){
+    this.dialog.open(RegisterComponent);
+  }
 }

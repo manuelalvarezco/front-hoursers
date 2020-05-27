@@ -9,16 +9,16 @@
         <button (click)="openSidenav(true)" mat-icon-button aria-label="Menu">
           <mat-icon>menu</mat-icon>
         </button>
-        <span class="text-center text-bold subtitle">
+        <a class="text-center text-bold subtitle gray-color " [routerLink]="['/home']">
           Crowd Units
-        </span>
+        </a>
         <ul class="nabvar-lg">
             <li style=" display: flex;align-items: flex-start; ">
                 <mat-icon>person</mat-icon>
-                <a class="gray-color fs-16" href="# ">Acceder</a>
+                <a class="gray-color fs-16" [routerLink]="['/auth/login']">Acceder</a>
             </li>
             <li style="display: flex;">
-                <a class="btn btn-primary fs-16 " href="#">Regístrate</a>
+                <a [routerLink]="['/auth/register']" class="btn btn-primary fs-16 ">Regístrate</a>
             </li>
         </ul>
     </div>

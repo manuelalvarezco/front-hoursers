@@ -1,16 +1,15 @@
 .register {
     margin: 2em auto;
-    max-width: 800px;
     @media screen and(max-width: 768px) {
         margin: 5px 15px 2em;
     }
 }
 
 .register-box {
+    margin: auto;
+    max-width: 900px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: 100%;
 }
 

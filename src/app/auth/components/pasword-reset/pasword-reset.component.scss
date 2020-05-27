@@ -5,11 +5,10 @@
 }
 
 .example-full-width {
-    margin-top: 2%;
     width: 100%;
 }
 
-.login {
+.reset {
     margin: 2em auto;
     max-width: 500px;
     @media screen and(max-width: 768px) {
@@ -17,18 +16,10 @@
     }
 }
 
-.login-box {
+.reset-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
-}
-
-.my-class .mat-dialog-container {
-    height: 400px;
-    width: 600px;
-    border-radius: 10px;
-    background: lightcyan;
-    color: #039be5;
 }

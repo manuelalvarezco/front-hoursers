@@ -1,0 +1,25 @@
+<div class="reset">
+    <div class="reset-box">
+
+
+        <h2 class="title">Recuperar contraseña</h2>
+        <p class="subtitle">Escribe tu email y te enviaremos un email con las instrucciones para recuperar tu contraseña:</p>
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Correo electrónico</mat-label>
+                <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Por favor ingresa un correo válido
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                    El correo es <strong>requerido</strong>
+                </mat-error>
+            </mat-form-field>
+            <div class="mt-2">
+                <button style="height: 41px;" class="btn btn-primary">Recuperar</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>

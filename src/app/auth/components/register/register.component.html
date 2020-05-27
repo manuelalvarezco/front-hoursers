@@ -1,53 +1,66 @@
 <div class="register">
+    <h2 class="title text-center">Alta de usuario</h2>
     <div class="register-box">
-        <h2 class="title">Alta de usuario</h2>
-        <form class="register-box__form">
+        <div class="col-md-6">
+            <form class="register-box__form">
 
-            <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
-                <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
-                    {{season}}
-                </mat-radio-button>
-            </mat-radio-group>
+                <mat-form-field class="mat-full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput placeholder="Nombre" value="">
+                </mat-form-field>
+                <mat-form-field class="mat-full-width">
+                    <mat-label>Apellidos</mat-label>
+                    <input matInput placeholder="Apellidos" value="">
+                </mat-form-field>
+                <mat-form-field class="mat-full-width">
+                    <mat-label>Teléfono</mat-label>
+                    <input matInput placeholder="885 85 85" value="">
+                </mat-form-field>
+                <mat-form-field class="mat-full-width">
+                    <mat-label>Correo</mat-label>
+                    <input matInput placeholder="jhon@doe.comx" value="">
+                </mat-form-field>
 
-            <mat-form-field class="mat-full-width">
-                <mat-label>Nombre</mat-label>
-                <input matInput placeholder="Nombre" value="">
-            </mat-form-field>
-            <mat-form-field class="mat-full-width">
-                <mat-label>Apellidos</mat-label>
-                <input matInput placeholder="Apellidos" value="">
-            </mat-form-field>
-            <mat-form-field class="mat-full-width">
-                <mat-label>Teléfono</mat-label>
-                <input matInput placeholder="885 85 85" value="">
-            </mat-form-field>
-            <mat-form-field class="mat-full-width">
-                <mat-label>Correo Electrónico</mat-label>
-                <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
-                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                    Por favor ingresa un correo válido
-                </mat-error>
-                <mat-error *ngIf="emailFormControl.hasError('required')">
-                    El correo es <strong>requerido</strong>
-                </mat-error>
-            </mat-form-field>
+                <mat-form-field class="mat-full-width">
+                    <mat-label>Contraseña</mat-label>
+                    <input type="password" matInput placeholder="Contraseña" value="">
+                </mat-form-field>
+                <mat-form-field class="mat-full-width">
+                    <mat-label>Confirmar Contraseña</mat-label>
+                    <input type="password" matInput placeholder="Contraseña" value="">
+                </mat-form-field>
 
-            <mat-form-field class="mat-full-width">
-                <mat-label>Contraseña</mat-label>
-                <input type="password" matInput placeholder="Contraseña" value="">
-            </mat-form-field>
-            <mat-form-field class="mat-full-width">
-                <mat-label>Confirmar Contraseña</mat-label>
-                <input type="password" matInput placeholder="Contraseña" value="">
-            </mat-form-field>
+                <mat-checkbox>Acepto términos y condiciones</mat-checkbox>
 
-            <mat-checkbox>Acepto términos y condiciones</mat-checkbox>
-
-            <h5 class="parrafo">¿Has olvidado tu contraseña? Haz clic <a style="color: #F34A2D;" href="#">aquí  </a> para recuperarla</h5>
-            <div class="d-flex justify-content-center">
-                <button style="height: 41px;width: 100%;" class="btn btn-primary">Registrarse</button>
+                <div class="d-flex justify-content-center mt-2">
+                    <button style="height: 41px;width: 100%;" class="btn btn-primary">Registrarse</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h2 class="subtitle">Regístrate en Crowd Units. Todo son ventajas: </h2>
+            <div class="d-flex" style="margin-top: 1em;">
+                <img src="assets/images/ico1.png" height="50" alt="icono">
+                <span class="parrafo" style="margin-left: .5em;">Darte de alta en Housers no compromete a nada y no tiene ningún coste.</span>
             </div>
-        </form>
+            <div class="d-flex" style="margin-top: 1em;">
+                <img src="assets/images/ico2.png" height="50" alt="icono">
+                <span class="parrafo" style="margin-left: .5em;">La cuenta Housers no tiene comisiones, puedes ingresar y retirar fondos siempre que quieras sin ningún coste..</span>
+            </div>
+            <div class="d-flex" style="margin-top: 1em;">
+                <img src="assets/images/ico3.png" height="50" alt="icono">
+                <span class="parrafo" style="margin-left: .5em;">Una vez que realices el proceso de alta podrás acceder a tu área privada y analizar toda la documentación soporte de los proyectos..</span>
+            </div>
+            <div class="d-flex" style="margin-top: 1em;">
+                <img src="assets/images/ico4.png" height="50" alt="icono">
+                <span class="parrafo" style="margin-left: .5em;">Invierte a partir de 50 € en las mejores oportunidades inmobiliarias con todas las garantías y altas rentabilidades. De una forma rápida, sencilla y segura..</span>
+            </div>
+            <div class="d-flex" style="margin-top: 1em;">
+                <img src="assets/images/ico5.png" height="50" alt="icono">
+                <span class="parrafo" style="margin-left: .5em;">Earlyield: consigue una rentabilidad anual* extra, que se indicará de manera exclusiva en el proyecto, desde el día en que inviertas hasta que se financie el proyecto en todas las oportunidades en fase de financiación y que se indique expresamente</span>
+            </div>
+        </div>
+
 
     </div>
 

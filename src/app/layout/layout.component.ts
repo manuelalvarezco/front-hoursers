@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class LayoutComponent implements OnInit {
 
+
   sidenav$: Observable<boolean>;
 
   public opened;

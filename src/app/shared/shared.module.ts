@@ -7,24 +7,29 @@ import { BannerComponent } from './components/banner/banner.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { RegisterComponent } from '../auth/components/register/register.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormRegisterComponent } from './components/form-register/form-register.component';
 
 
 
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, BannerComponent, SidenavComponent],
+  declarations: [NavbarComponent, FooterComponent, BannerComponent, SidenavComponent, FormRegisterComponent],
   entryComponents:[
     RegisterComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
     NavbarComponent,
     FooterComponent,
     BannerComponent,
-    SidenavComponent
+    SidenavComponent,
+    FormRegisterComponent
   ]
 })
 export class SharedModule { }

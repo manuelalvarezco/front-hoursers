@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
+import {FormControl, FormGroupDirective, NgForm, Validators, FormBuilder} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
+import Swal from 'sweetalert2'
+import { Router } from '@angular/router';
+
 
 /** Error when invalid control is dirty, touched, or submitted. */
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -25,9 +28,33 @@ export class PaswordResetComponent implements OnInit {
 
   matcher = new MyErrorStateMatcher();
 
-  constructor() { }
+  constructor(private router:Router) { 
 
-  ngOnInit(): void {
+  }
+
+  ngOnInit() {
+  }
+
+  reset(){
+    if(!this.emailFormControl.valid){
+      return;
+    }
+
+    Swal.fire({
+      allowOutsideClick:true,
+      icon:'info',
+      text:'Si estas registrado revisa tu correo y recupera tu contraseña :)'
+    })
+
+    setTimeout(function(){
+      Swal.close()
+    },5000)
+    
+
+    this.router.navigateByUrl('/home')
+      
+    
+    
   }
 
 }

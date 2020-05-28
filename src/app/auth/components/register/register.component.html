@@ -2,38 +2,69 @@
     <h2 class="title text-center">Alta de usuario</h2>
     <div class="register-box">
         <div class="col-md-6">
-            <form class="register-box__form">
-
+            <form class="register-box__form" [formGroup]="forma" (ngSubmit)="register()">
+                <label class="parrafo" id="example-radio-group-label">Regístrate como</label>
+                <mat-radio-group class="example-radio-group" formControlName="type" aria-label="Select an option">
+                    <mat-radio-button class="example-radio-button" value="person">Persona</mat-radio-button>
+                    <mat-radio-button class="example-radio-button" value="enterprice">Empresa</mat-radio-button>
+                </mat-radio-group>
+                <div class="info-empresa parrafo" *ngIf="forma.get('type').value === 'enterprice'">
+                    Es importante que decidas como vas a realizar tus inversiones. Si piensas invertir como empresa deberás darte de alta seleccionando empresa. Y si luego quieres invertir como particular, tendrás que crearte una cuenta aparte, ya que una vez creada la cuenta
+                    no se podrá modificar.
+                </div>
+                <mat-error *ngIf="forma.get('type').touched && !forma.get('type').valid">
+                    El tipo es obligatorio
+                </mat-error>
                 <mat-form-field class="mat-full-width">
-                    <mat-label>Nombre</mat-label>
-                    <input matInput placeholder="Nombre" value="">
+                    <mat-label *ngIf="forma.get('type').value === 'person' ||  forma.get('type').value === ''">Nombre</mat-label>
+                    <mat-label *ngIf="forma.get('type').value === 'enterprice'">Nombre representante legal</mat-label>
+                    <input matInput formControlName="name">
                 </mat-form-field>
+                <mat-error *ngIf="forma.get('name').touched && !forma.get('name').valid">
+                    El nombre es obligatorio
+                </mat-error>
                 <mat-form-field class="mat-full-width">
                     <mat-label>Apellidos</mat-label>
-                    <input matInput placeholder="Apellidos" value="">
+                    <input matInput placeholder="Apellidos" formControlName="last_name">
                 </mat-form-field>
+                <mat-error *ngIf="forma.get('last_name').touched && !forma.get('last_name').valid">
+                    El apellido es obligatorio
+                </mat-error>
                 <mat-form-field class="mat-full-width">
                     <mat-label>Teléfono</mat-label>
-                    <input matInput placeholder="885 85 85" value="">
+                    <input matInput placeholder="885 85 85" formControlName="phone">
                 </mat-form-field>
+                <mat-error *ngIf="forma.get('phone').touched && !forma.get('phone').valid">
+                    El teléfono es obligatorio
+                </mat-error>
                 <mat-form-field class="mat-full-width">
                     <mat-label>Correo</mat-label>
-                    <input matInput placeholder="jhon@doe.comx" value="">
+                    <input matInput placeholder="jhon@doe.comx" formControlName="email">
                 </mat-form-field>
-
+                <mat-error *ngIf="forma.get('email').touched && !forma.get('email').valid">
+                    El correo es obligatorio
+                </mat-error>
                 <mat-form-field class="mat-full-width">
                     <mat-label>Contraseña</mat-label>
-                    <input type="password" matInput placeholder="Contraseña" value="">
+                    <input type="password" matInput placeholder="Contraseña" formControlName="password">
                 </mat-form-field>
+                <mat-error *ngIf="validPassOne">
+                    La contraseña es obligatoria y debe tener mínimo 6 caracteres
+                </mat-error>
                 <mat-form-field class="mat-full-width">
                     <mat-label>Confirmar Contraseña</mat-label>
-                    <input type="password" matInput placeholder="Contraseña" value="">
+                    <input type="password" matInput placeholder="Contraseña" formControlName="password_confirmation">
                 </mat-form-field>
+                <mat-error *ngIf="!validPassTwo">
+                    Las contraseñas deben ser iguales
+                </mat-error>
 
-                <mat-checkbox>Acepto términos y condiciones</mat-checkbox>
-
+                <mat-checkbox formControlName="terms">Acepto términos y condiciones</mat-checkbox>
+                <mat-error *ngIf="forma.get('terms').touched && !forma.get('terms').valid">
+                    Debes aceptar términos y condiciones
+                </mat-error>
                 <div class="d-flex justify-content-center mt-2">
-                    <button style="height: 41px;width: 100%;" class="btn btn-primary">Registrarse</button>
+                    <button [ngClass]="{'btn-primary':forma.valid, 'btn-default':!forma.valid}" style="height: 41px;width: 100%;" class="btn">Registrarse</button>
                 </div>
             </form>
         </div>

@@ -1,0 +1,10 @@
+<label id="example-radio-group-label">Registrarse como:</label>
+<mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="favoriteSeason">
+    <mat-radio-button (change)="prueba($event)" class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+        {{season}}
+    </mat-radio-button>
+</mat-radio-group>
+<div class="info-empresa" *ngIf="favoriteSeason === 'Empresa'">
+    Es importante que decidas como vas a realizar tus inversiones. Si piensas invertir como empresa deberás darte de alta seleccionando empresa. Y si luego quieres invertir como particular, tendrás que crearte una cuenta aparte, ya que una vez creada la cuenta
+    no se podrá modificar.
+</div>

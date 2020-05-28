@@ -1,10 +1,8 @@
 <div class="reset">
     <div class="reset-box">
-
-
         <h2 class="title">Recuperar contraseña</h2>
         <p class="subtitle">Escribe tu email y te enviaremos un email con las instrucciones para recuperar tu contraseña:</p>
-        <form class="example-form">
+        <form class="example-form" (ngSubmit)="reset()">
             <mat-form-field class="example-full-width">
                 <mat-label>Correo electrónico</mat-label>
                 <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">

@@ -7,6 +7,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PaswordResetComponent } from './components/pasword-reset/pasword-reset.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PaswordResetComponent } from './components/pasword-reset/pasword-reset.
     AuthRoutingModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   exports:[
     RegisterComponent

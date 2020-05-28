@@ -2,20 +2,20 @@
     <div class="login-box">
         <h2 class="title">Accede a tu área privada</h2>
         <h4 class="subtitle">Si todavía no eres un Houser, ¿a qué estás esperando? <a style="color: #F34A2D; cursor: pointer;" routerLink="/auth/register">Regístrate aquí</a></h4>
-        <form class="example-form">
+        <form class="example-form" autocomplete="off" [formGroup]="forma" (ngSubmit)="save()">
             <mat-form-field class="example-full-width">
                 <mat-label>Correo Electrónico</mat-label>
-                <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
-                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                    Por favor ingresa un correo válido
-                </mat-error>
-                <mat-error *ngIf="emailFormControl.hasError('required')">
-                    El correo es <strong>requerido</strong>
+                <input formControlName="email" matInput placeholder="Ex. pat@example.com">
+                <mat-error *ngIf="!forma.get('email').valid">
+                    El correo es necesario
                 </mat-error>
             </mat-form-field>
             <mat-form-field class="example-full-width">
                 <mat-label>Contraseña</mat-label>
-                <input type="password" matInput placeholder="*****" value="">
+                <input formControlName="password" type="password" matInput placeholder="*****">
+                <mat-error *ngIf="!forma.get('password').valid">
+                    La contraseña es necesaria
+                </mat-error>
             </mat-form-field>
             <h5 class="parrafo">¿Has olvidado tu contraseña? Haz clic <a style="color: #F34A2D;" [routerLink]="['/auth/reset-password']">aquí  </a> para recuperarla</h5>
             <div class="d-flex justify-content-center">

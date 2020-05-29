@@ -12,7 +12,7 @@
                     Es importante que decidas como vas a realizar tus inversiones. Si piensas invertir como empresa deberás darte de alta seleccionando empresa. Y si luego quieres invertir como particular, tendrás que crearte una cuenta aparte, ya que una vez creada la cuenta
                     no se podrá modificar.
                 </div>
-                <mat-error *ngIf="forma.get('type').touched && !forma.get('type').valid">
+                <mat-error *ngIf="!forma.get('type').valid">
                     El tipo es obligatorio
                 </mat-error>
                 <mat-form-field class="mat-full-width">
@@ -60,7 +60,7 @@
                 </mat-error>
 
                 <mat-checkbox formControlName="terms">Acepto términos y condiciones</mat-checkbox>
-                <mat-error *ngIf="forma.get('terms').touched && !forma.get('terms').valid">
+                <mat-error *ngIf="!validTerms">
                     Debes aceptar términos y condiciones
                 </mat-error>
                 <div class="d-flex justify-content-center mt-2">
@@ -72,11 +72,11 @@
             <h2 class="subtitle">Regístrate en Crowd Units. Todo son ventajas: </h2>
             <div class="d-flex" style="margin-top: 1em;">
                 <img src="assets/images/ico1.png" height="50" alt="icono">
-                <span class="parrafo" style="margin-left: .5em;">Darte de alta en Housers no compromete a nada y no tiene ningún coste.</span>
+                <span class="parrafo" style="margin-left: .5em;">Darte de alta en Crowd Units no compromete a nada y no tiene ningún coste.</span>
             </div>
             <div class="d-flex" style="margin-top: 1em;">
                 <img src="assets/images/ico2.png" height="50" alt="icono">
-                <span class="parrafo" style="margin-left: .5em;">La cuenta Housers no tiene comisiones, puedes ingresar y retirar fondos siempre que quieras sin ningún coste..</span>
+                <span class="parrafo" style="margin-left: .5em;">La cuenta Crowd Units no tiene comisiones, puedes ingresar y retirar fondos siempre que quieras sin ningún coste..</span>
             </div>
             <div class="d-flex" style="margin-top: 1em;">
                 <img src="assets/images/ico3.png" height="50" alt="icono">

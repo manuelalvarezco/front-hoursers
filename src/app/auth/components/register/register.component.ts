@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
 
   favoriteSeason: string;
   seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
-  
+
   machPasswords = true;
 
   type;
@@ -32,14 +32,14 @@ export class RegisterComponent implements OnInit {
 
   createForm(){
     this.forma = this.formBuilder.group({
-      type:['',Validators.required],
+      type:['person',Validators.required],
       name:['',Validators.required],
       last_name:['',Validators.required],
       phone:['',Validators.required],
       email : ['',[Validators.required,Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')]],
       password : ['',[Validators.required, Validators.minLength(6)]],
       password_confirmation : ['',[Validators.required, Validators.minLength(6)]],
-      terms : ['',Validators.required],
+      terms : ['1',Validators.required],
     });
   }
 
@@ -47,7 +47,7 @@ export class RegisterComponent implements OnInit {
   get validPassOne(){
     return this.forma.get('password').invalid && this.forma.get('password').touched;
   }
-  
+
   get validPassTwo(){
 
     const passOne = this.forma.get('password').value;
@@ -60,9 +60,13 @@ export class RegisterComponent implements OnInit {
     return true;
   }
 
+  get validTerms(){
+    return this.forma.controls['terms'].value;
+  }
+
   register(){
 
-    if(this.forma.invalid){
+    if(this.forma.invalid || this.forma.controls['terms'].value != true){
       return;
     }
 
@@ -77,22 +81,22 @@ export class RegisterComponent implements OnInit {
     },3000)
 
 
-    
+
     /**
-     
+
     Swal.fire({
       icon:'error',
       title:'Usuario o contraseña incorrectos',
       text:'Ha ocurrido un error'
     })
 
-     * 
+     *
      */
 
     this.router.navigateByUrl('/home')
-      
-    
-    
+
+
+
   }
 
 }
